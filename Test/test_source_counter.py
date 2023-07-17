@@ -2,11 +2,10 @@ import unittest
 
 from score_counter import ScoreCounter
 
-
 class MyTestCase(unittest.TestCase):
 
     def test_score_counter(self):
-        self.assertEqual(ScoreCounter.increase_score(4, 0))
+        self.assertEqual(ScoreCounter.increase_score(4))
 
     def test_draw(self):
         self.assertEqual(ScoreCounter.draw(2, 3))
